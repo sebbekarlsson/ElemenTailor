@@ -24,31 +24,30 @@ var ElemenTailor = {
     /**
      * This function is used to create an element.
      * @param e_name - name of element (example: 'div')
-     * @param options - options (example: {childs: ElementTailer.create(...))}
      * @param attributes - attributes for element (example: {class: 'btn'})
     */
     create: function(
                 e_name,
-                options,
                 attributes
             ) {
 
         var element = document.createElement(e_name);
         
-        if (options == undefined) { options = {} };
+        if (attributes == undefined) { attributes = {} };
 
-        if ('childs' in options) {
-            for (var i = 0; i < options['childs'].length; i++) {
-                element.appendChild(options['childs'][i]);
+        if ('childs' in attributes) {
+            for (var i = 0; i < attributes['childs'].length; i++) {
+                element.appendChild(attributes['childs'][i]);
             }
-        }
-
-        if ('innerHTML' in options) {
-            element.innerHTML = options['innerHTML'];
         }
 
         if (attributes != undefined) {
             for (key in attributes) {
+                
+                if (key in element) {
+                    element[key] = attributes[key];
+                }
+
                 element.setAttribute(
                     key,
                     attributes[key]

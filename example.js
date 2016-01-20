@@ -3,7 +3,7 @@ var dom = ElemenTailor.create(
         {
             childs: [
                 ElemenTailor.create('section', {childs: [
-                    ElemenTailor.create('img', undefined, {class: 'beautiful-image'})
+                    ElemenTailor.create('img', {class: 'beautiful-image', innerHTML: 'test'})
                 ]})
             ]
         },
