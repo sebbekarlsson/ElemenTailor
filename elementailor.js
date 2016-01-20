@@ -1,3 +1,24 @@
+/**
+ * _____ _                         _____     _ _             _     
+ * | ____| | ___ _ __ ___   ___ _ _|_   _|_ _(_) | ___  _ __ (_)___ 
+ * |  _| | |/ _ \ '_ ` _ \ / _ \ '_ \| |/ _` | | |/ _ \| '__|| / __|
+ * | |___| |  __/ | | | | |  __/ | | | | (_| | | | (_) | | _ | \__ \
+ * |_____|_|\___|_| |_| |_|\___|_| |_|_|\__,_|_|_|\___/|_|(_)/ |___/
+ *                                                         |__/     
+ *
+ * @description Javascript Library for creating elements & doms with ease.
+ * @author Sebastian Robert Karlsson | sebbekarlsson97@gmail.com
+ *
+ * This is just a very lightweight object that you can use for creating
+ * elements & doms.
+ *
+ * Use the ElemenTailor.create() function to create elements.
+ * You can add classes, identifier and childs in one call.
+ *
+ * Have fun!
+*/
+
+
 var ElemenTailor = {
 
     /**
