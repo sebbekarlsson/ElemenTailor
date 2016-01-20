@@ -42,18 +42,16 @@ var ElemenTailor = {
             }
         }
 
-        if (attributes != undefined) {
-            for (key in attributes) {
-                
-                if (key in element) {
-                    element[key] = attributes[key];
-                }
-
-                element.setAttribute(
-                    key,
-                    attributes[key]
-                )
+        for (key in attributes) {
+            
+            if (key in element) {
+                element[key] = attributes[key];
             }
+
+            element.setAttribute(
+                key,
+                attributes[key]
+            )
         }
 
         return element;
