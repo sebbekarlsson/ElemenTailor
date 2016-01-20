@@ -28,10 +28,9 @@ var ElemenTailor = {
      * @return HTMLElement - returns an HTML element.
     */
     create: function(
-                e_name,
-                attributes
-            ) {
-
+        e_name,
+        attributes
+    ) {
         var element = document.createElement(e_name);
         
         if (attributes == undefined) { attributes = {} };
@@ -43,7 +42,6 @@ var ElemenTailor = {
         }
 
         for (key in attributes) {
-            
             if (key in element) {
                 element[key] = attributes[key];
             }
