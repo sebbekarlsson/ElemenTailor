@@ -1,15 +1,13 @@
 var dom = ElemenTailor.create(
-        'div',
-        {
-            childs: [
-                ElemenTailor.create('section', {childs: [
-                    ElemenTailor.create('img', {class: 'beautiful-image', innerHTML: 'test'})
-                ]})
-            ]
-        },
-        {
-            class: 'tailor-content blue'
-        }
+    'div',
+    {
+        class: 'tailor-content blue',
+        childs: [
+            ElemenTailor.create('section', {childs: [
+                ElemenTailor.create('img', {class: 'beautiful-image', innerHTML: 'test'})
+            ]})
+        ]
+    }
 );
 
 console.log(dom);
