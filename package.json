@@ -1,0 +1,28 @@
+{
+  "name": "elementailor",
+  "version": "1.0.0",
+  "description": "Javascript library for creating elements with ease",
+  "main": "elementailor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebbekarlsson/ElemenTailor.git"
+  },
+  "keywords": [
+    "element",
+    "dom",
+    "doms",
+    "react",
+    "fluid",
+    "elements",
+    "append"
+  ],
+  "author": "Sebastian Robert Karlsson <sebbekarlsson97@gmail.com> (http://ianertson.com)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sebbekarlsson/ElemenTailor/issues"
+  },
+  "homepage": "https://github.com/sebbekarlsson/ElemenTailor#readme"
+}
