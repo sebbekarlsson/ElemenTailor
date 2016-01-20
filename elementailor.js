@@ -26,7 +26,7 @@ var ElemenTailor = {
      * @param e_name - name of element (example: 'div')
      * @param options - options for element (example: {class: 'btn')}
     */
-    'create': function(
+    create: function(
                 e_name,
                 options
             ) {
