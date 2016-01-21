@@ -25,12 +25,12 @@ var ElemenTailor = {
      * This function is used to create an element.
      * @param e_name - name of element (example: 'div')
      * @param attributes - attributes for element (example: {class: 'btn'})
+     * @return HTMLElement - returns an HTML element.
     */
     create: function(
-                e_name,
-                attributes
-            ) {
-
+        e_name,
+        attributes
+    ) {
         var element = document.createElement(e_name);
         
         if (attributes == undefined) { attributes = {} };
@@ -41,18 +41,15 @@ var ElemenTailor = {
             }
         }
 
-        if (attributes != undefined) {
-            for (key in attributes) {
-                
-                if (key in element) {
-                    element[key] = attributes[key];
-                }
-
-                element.setAttribute(
-                    key,
-                    attributes[key]
-                )
+        for (key in attributes) {
+            if (key in element) {
+                element[key] = attributes[key];
             }
+
+            element.setAttribute(
+                key,
+                attributes[key]
+            )
         }
 
         return element;
