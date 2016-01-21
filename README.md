@@ -2,7 +2,12 @@
 > Create elements with ease
 
 ## Using ElemenTailor.js
-        
+> First include the script in your HTML document:
+
+        <script type='text/javascript' src='elementailor.js'></script>
+
+> Then you can start using it:
+
         /* How to use */
         var element = ElemenTailor.create(/* name */, /* attributes */)
 
