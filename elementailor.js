@@ -15,6 +15,8 @@
  * Use the ElemenTailor.create() function to create elements.
  * You can add classes, identifier and childs in one call.
  *
+ * Use the ElemenTailor.delete() function to delete elements.
+ *
  * Have fun!
 */
 
