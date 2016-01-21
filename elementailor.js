@@ -53,5 +53,25 @@ var ElemenTailor = {
         }
 
         return element;
+    },
+
+    
+    /**
+     * This function is used to delete an element.
+     * @param element - The element to delete.
+     * @return boolean - true / false.
+    */ 
+    delete: function(
+        element
+    ) {
+        if (element == undefined) { return false; }
+
+        var parent = element.parentNode;
+        
+        if (parent == undefined) { return false; }
+
+        parent.removeChild(element);
+
+        return true;
     }
 };
