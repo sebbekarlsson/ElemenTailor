@@ -79,9 +79,6 @@ var ElemenTailor = {
 };
 
 
-if (document == undefined) {
-    console.log('ElemenTailorJS can only be used within a document.');
-}
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ElemenTailor;
 }
