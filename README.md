@@ -6,6 +6,10 @@
 
         <script type='text/javascript' src='elementailor.js'></script>
 
+> Or if you have installed using npm, do this in your .js file:
+
+        var ElemenTailor = require('elementailor');
+
 > Then you can start using it:
 
         /* How to use */
