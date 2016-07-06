@@ -37,12 +37,6 @@ var ElemenTailor = {
         
         if (attributes == undefined) { attributes = {} };
 
-        if ('childs' in attributes) {
-            for (var i = 0; i < attributes['childs'].length; i++) {
-                element.appendChild(attributes['childs'][i]);
-            }
-        }
-
         for (key in attributes) {
             if (key in element) {
                 element[key] = attributes[key];
@@ -52,6 +46,12 @@ var ElemenTailor = {
                 key,
                 attributes[key]
             )
+        }
+
+        if ('childs' in attributes) {
+            for (var i = 0; i < attributes['childs'].length; i++) {
+                element.appendChild(attributes['childs'][i]);
+            }
         }
 
         return element;
