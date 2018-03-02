@@ -57,9 +57,7 @@ var ElemenTailor = {
      * @param element - The element to delete.
      * @return element - the element that was removed
     */ 
-    delete: function(
-        element
-    ) {
+    delete: function(element) {
         if (element == undefined) return false;
 
         var parent = element.parentNode;
