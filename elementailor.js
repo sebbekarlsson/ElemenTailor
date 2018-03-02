@@ -35,24 +35,18 @@ var ElemenTailor = {
     ) {
         var element = document.createElement(e_name);
         
-        if (attributes == undefined) { attributes = {} };
+        if (attributes == undefined) attributes = {};
 
         for (key in attributes) {
-            if (key in element) {
+            if (key in element)
                 element[key] = attributes[key];
-            }
 
-            element.setAttribute(
-                key,
-                attributes[key]
-            )
+            element.setAttribute(key, attributes[key])
         }
 
-        if ('childs' in attributes) {
-            for (var i = 0; i < attributes['childs'].length; i++) {
+        if ('childs' in attributes)
+            for (var i = 0; i < attributes['childs'].length; i++)
                 element.appendChild(attributes['childs'][i]);
-            }
-        }
 
         return element;
     },
@@ -61,24 +55,21 @@ var ElemenTailor = {
     /**
      * This function is used to delete an element.
      * @param element - The element to delete.
-     * @return boolean - true / false.
+     * @return element - the element that was removed
     */ 
     delete: function(
         element
     ) {
-        if (element == undefined) { return false; }
+        if (element == undefined) return false;
 
         var parent = element.parentNode;
         
-        if (parent == undefined) { return false; }
+        if (parent == undefined) return false;
 
-        parent.removeChild(element);
-
-        return true;
+        return parent.removeChild(element);
     }
 };
 
 
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports)
     module.exports = ElemenTailor;
-}
